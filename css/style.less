@@ -17,7 +17,7 @@
 
 
 body {
-    .font-400;
+    .font-500;
 }
 
 a {
@@ -130,7 +130,7 @@ a {
         width: 170px;
     }
 
-    label:not(.checkbox__custom) {
+    label:not(.checkbox__custom, .radio__custom) {
         display: block;
         .font-500;
         font-size: 11px;
@@ -1535,34 +1535,35 @@ a {
     }
 }
 
-.creator__input{
-	background: #f3f5f9;
+.creator__input {
+    background: #f3f5f9;
 
-	label, input{
-		pointer-events: none;
-	}
+    label,
+    input {
+        pointer-events: none;
+    }
 }
 
-.creation__date{
-	.font-500;
-  font-size: 13px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #99a6b6;
-  opacity: 0;
-  pointer-events: none;
+.creation__date {
+    .font-500;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #99a6b6;
+    opacity: 0;
+    pointer-events: none;
 
-  &.show{
-  	pointer-events: all;
-  	opacity: 1;
-  }
+    &.show {
+        pointer-events: all;
+        opacity: 1;
+    }
 }
 
 .taskboard {
     width: calc(100% - 260px);
     height: 100vh;
 
-   
+
 
     hr {
         width: 100%;
@@ -1571,26 +1572,28 @@ a {
     }
 }
 
- .create__task,.add__client {
+.create__task,
+.add__client {
 
-        width: 170px;
-        height: 40px;
-        padding: 12px;
-        border-radius: 4px;
-        box-shadow: 0 4px 10px 0 rgba(16, 156, 241, 0.24);
-        background-color: #109cf1;
-        .font-600;
-        font-size: 13px;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #ffffff;
-        display: block;
-        margin-top: 24px;
-        margin-right: calc(24px + (100vw - 1440px) / 2);
-        margin-left: auto;
-        margin-bottom: 24px;
-    }
+    width: 170px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 0 rgba(16, 156, 241, 0.24);
+    background-color: #109cf1;
+    .font-600;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    margin-top: 24px;
+    margin-right: calc(24px + (100vw - 1440px) / 2);
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
 .taskboard__layout {
     padding: 20px 24px;
     height: calc(100% - 88px);
@@ -2180,11 +2183,11 @@ a {
 
     }
 
-    &__company{
-    	width: 115px;
+    &__company {
+        width: 115px;
     }
 
-    &__tour-count{
+    &__tour-count {
         .font-500;
         font-size: 11px;
         line-height: normal;
@@ -2194,7 +2197,6 @@ a {
         // margin: 0 auto;
         width: 100px;
         flex-grow: 1
-
     }
 
     &__chat {
@@ -2207,8 +2209,9 @@ a {
     }
 }
 
-.contact__table__header{
-	  .contact__item__mail,
+.contact__table__header {
+
+    .contact__item__mail,
     .contact__item__tel,
     .contact__item__start,
     .contact__item__last-active,
@@ -2216,73 +2219,77 @@ a {
     .contact__preview__name,
     .contact__item__company,
     .contact__item__tour-count,
-     {
-    	.font-600;
-		  font-size: 13px;
-		  line-height: normal;
-		  letter-spacing: normal;
-		  color: #99a6b6;
-		  display: flex;
-		  align-items: center;
-		  padding: 0;
+        {
+        .font-600;
+        font-size: 13px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #99a6b6;
+        display: flex;
+        align-items: center;
+        padding: 0;
     }
 
-    svg{
-    	flex-shrink: 0;
+    svg {
+        flex-shrink: 0;
     }
 
-    .sort__upper{
-    	path{
-    		fill: transparent;
-    	}
-    	path:nth-child(2){
-    		fill: @main-lightblue;
-    	}
+    .sort__upper {
+        path {
+            fill: transparent;
+        }
+
+        path:nth-child(2) {
+            fill: @main-lightblue;
+        }
     }
 
-    .sort__down{
-    	path{
-    		fill: transparent;
-    	}
-    	path:nth-child(3){
-    		fill: @main-lightblue;
-    	}
+    .sort__down {
+        path {
+            fill: transparent;
+        }
+
+        path:nth-child(3) {
+            fill: @main-lightblue;
+        }
     }
 
-    .three_state{
-    	&.middle{
-    		.checkmark:before{
-    			content: '';
-    			background: unset;
-    			display: flex;
-				  width: 8px;
-				  height: 1px;
-    			background: @main-lightblue;
-    			border-radius: 0;
-    		}
-    		.checkmark{
-    			border-color: @main-lightblue
-    		}
-    	}
+    .three_state {
+        &.middle {
+            .checkmark:before {
+                content: '';
+                background: unset;
+                display: flex;
+                width: 8px;
+                height: 1px;
+                background: @main-lightblue;
+                border-radius: 0;
+            }
 
-    	&.selected{
-    		.checkmark{
-    			border-color: @main-lightblue;
-    			background: @main-lightblue;
+            .checkmark {
+                border-color: @main-lightblue
+            }
+        }
 
-    			&:after{
-    				background: transparent url(../img/icon/icons-tick.svg) center center no-repeat;
-					background-size: cover;
-    			}
-    		}
-    	}
+        &.selected {
+            .checkmark {
+                border-color: @main-lightblue;
+                background: @main-lightblue;
 
-    	.dropdown__list{
-    		width: 240px;
-    		left: 100%;
-    	}
+                &:after {
+                    background: transparent url(../img/icon/icons-tick.svg) center center no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .dropdown__list {
+            width: 240px;
+            left: 100%;
+        }
     }
 }
+
 .green {
     background: @main-green
 }
@@ -2340,47 +2347,17 @@ a {
 }
 
 
-.clients__layout{
-	padding-top: 0;
+.clients__layout {
+    padding-top: 0;
 
-	.contact__item{
-		padding-right: 40px;
-	}
+    .contact__item {
+        padding-right: 40px;
+    }
 }
 
-.client-form__layout{
-	.deal__form .form{
-		padding: 24px;
-		width: calc(24px * 2 + 320px * 2 + 40px);
-	}
+.client-form__layout {
+    .deal__form .form {
+        padding: 24px;
+        width: calc(24px * 2 + 320px * 2 + 40px);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
