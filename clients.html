@@ -127,21 +127,16 @@
             Выйти
         </a>
     </aside>
-    <main class="contacts__layout ">
-        <!-- Что бы увидеть эту панель нужно добавить класс show -->
-        <div class="action__info show">
-            <p class="action__legend">Выбрано: <span>2</span></p>
-            <p class="action__legend">Действия</p>
-            <a href="#" class="change__status">Изменить статус</a>
-            <a href="#" class="delete">Удалить</a>
-        </div>
+    <main class="contacts__layout clients__layout ">
+		<a href="#" class="add__client">Добавить клиента</a>
+
         <div class="contact__table form">
             <div class="contact__table__header contact__item ">
                 <!-- Кастомизированый чекбокс с тремя состоянимаями:
     			1. Активное - класс selected
     			2. Не активное - дополнительных классов кроме checkbox__custom three_state dropdown нету
     			3. Стреднее - класс middle -->
-                <div for="somebody" class="checkbox__custom  middle three_state dropdown open">
+                <div for="somebody" class="checkbox__custom   three_state dropdown ">
                     <div class="dropdown__toogle">
                         <input type="checkbox" id="somebody" readonly="">
                         <span class="checkmark"></span>
@@ -186,7 +181,7 @@
                     </svg>
                 </div>
                 <div class="contact__item__tel">Телефон</div>
-                <p class="contact__item__start">Работает с
+                <p class="contact__item__start">Дата создания
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <g fill="none" fill-rule="evenodd">
                             <g>
@@ -199,7 +194,7 @@
                         </g>
                     </svg>
                 </p>
-                <p class="contact__item__last-active">Недавняя <br>активность
+                <p class="contact__item__company">Компания
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <g fill="none" fill-rule="evenodd">
                             <g>
@@ -212,7 +207,7 @@
                         </g>
                     </svg>
                 </p>
-                <p class="contact__item__status ">Статус
+                <p class="contact__item__tour-count ">Количество туров
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <g fill="none" fill-rule="evenodd">
                             <g>
@@ -233,15 +228,14 @@
                     <span class="checkmark"></span>
                 </label>
                 <div class="contact__preview">
-                    <img class="contact__preview__img" src="img/icon/ava-empty.svg" alt="">
                     <p class="contact__preview__name">Василий Степанюк</p>
                 </div>
                 <a href="mailto:#" class="contact__item__mail">wujot@zedek.co.uk</a>
                 <a href="tel:#" class="contact__item__tel">(920) 461-3284</a>
                 <p class="contact__item__start">16 Авг 2020</p>
-                <p class="contact__item__last-active">02 Июн 2020</p>
-                <p class="contact__item__status green">Активный</p>
-                <a href="#"><img src="img/icon/icons-chat-filled.svg" class="contact__item__chat" alt=""></a>
+                <p class="contact__item__company">02 Июн 2020</p>
+                <p class="contact__item__tour-count">1</p>
+                
             </div>
             <div class="contact__item">
                 <label for="somebody" class="checkbox__custom">
@@ -249,15 +243,14 @@
                     <span class="checkmark"></span>
                 </label>
                 <div class="contact__preview">
-                    <img class="contact__preview__img" src="img/icon/ava-empty.svg" alt="">
                     <p class="contact__preview__name">Елизавета Максимова</p>
                 </div>
                 <a href="mailto:#" class="contact__item__mail">jed@ekekat.com</a>
                 <a href="tel:#" class="contact__item__tel">(920) 461-3284</a>
                 <p class="contact__item__start">16 Авг 2020</p>
-                <p class="contact__item__last-active">02 Июн 2020</p>
-                <p class="contact__item__status red">Удален</p>
-                <a href="#"><img src="img/icon/icons-chat-filled.svg" class="contact__item__chat" alt=""></a>
+                <p class="contact__item__company">02 Июн 2020</p>
+                <p class="contact__item__tour-count">1<p>
+                
             </div>
             <div class="contact__item">
                 <label for="somebody" class="checkbox__custom">
@@ -265,15 +258,14 @@
                     <span class="checkmark"></span>
                 </label>
                 <div class="contact__preview">
-                    <img class="contact__preview__img" src="img/icon/ava-empty.svg" alt="">
                     <p class="contact__preview__name">Василий Степанюк</p>
                 </div>
                 <a href="mailto:#" class="contact__item__mail">wujot@zedek.co.uk</a>
                 <a href="tel:#" class="contact__item__tel">(920) 461-3284</a>
                 <p class="contact__item__start">16 Авг 2020</p>
-                <p class="contact__item__last-active ">02 Июн 2020</p>
-                <p class="contact__item__status yellow">Заморожен</p>
-                <a href="#"><img src="img/icon/icons-chat-filled.svg" class="contact__item__chat" alt=""></a>
+                <p class="contact__item__company ">02 Июн 2020</p>
+                <p class="contact__item__tour-count">1</p>
+                
             </div>
         </div>
         <div class="pagination__section">

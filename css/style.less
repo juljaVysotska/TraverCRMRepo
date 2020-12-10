@@ -1535,11 +1535,43 @@ a {
     }
 }
 
+.creator__input{
+	background: #f3f5f9;
+
+	label, input{
+		pointer-events: none;
+	}
+}
+
+.creation__date{
+	.font-500;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #99a6b6;
+  opacity: 0;
+  pointer-events: none;
+
+  &.show{
+  	pointer-events: all;
+  	opacity: 1;
+  }
+}
+
 .taskboard {
     width: calc(100% - 260px);
     height: 100vh;
 
-    .create__task {
+   
+
+    hr {
+        width: 100%;
+        height: 1px;
+        background: #ebeff2;
+    }
+}
+
+ .create__task,.add__client {
 
         width: 170px;
         height: 40px;
@@ -1559,14 +1591,6 @@ a {
         margin-left: auto;
         margin-bottom: 24px;
     }
-
-    hr {
-        width: 100%;
-        height: 1px;
-        background: #ebeff2;
-    }
-}
-
 .taskboard__layout {
     padding: 20px 24px;
     height: calc(100% - 88px);
@@ -2111,7 +2135,8 @@ a {
     &__mail,
     &__tel,
     &__start,
-    &__last-active {
+    &__last-active,
+    &__company {
         display: block;
         .font-500;
         font-size: 13px;
@@ -2129,7 +2154,7 @@ a {
     }
 
     &__start {
-        width: 125px;
+        width: 155px;
     }
 
     &__last-active {
@@ -2138,8 +2163,8 @@ a {
 
     &__status {
         display: block;
-        max-width: 90px;
-        width: auto;
+        // max-width: 90px;
+        width: 100px;
         padding: 5px 11px;
         height: 24px;
         border-radius: 4px;
@@ -2152,6 +2177,23 @@ a {
         margin: 0 auto;
 
 
+
+    }
+
+    &__company{
+    	width: 115px;
+    }
+
+    &__tour-count{
+        .font-500;
+        font-size: 11px;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: @main-blue;
+        // margin: 0 auto;
+        width: 100px;
+        flex-grow: 1
 
     }
 
@@ -2171,7 +2213,10 @@ a {
     .contact__item__start,
     .contact__item__last-active,
     .contact__item__status,
-    .contact__preview__name {
+    .contact__preview__name,
+    .contact__item__company,
+    .contact__item__tour-count,
+     {
     	.font-600;
 		  font-size: 13px;
 		  line-height: normal;
@@ -2179,6 +2224,11 @@ a {
 		  color: #99a6b6;
 		  display: flex;
 		  align-items: center;
+		  padding: 0;
+    }
+
+    svg{
+    	flex-shrink: 0;
     }
 
     .sort__upper{
@@ -2288,3 +2338,49 @@ a {
 
     }
 }
+
+
+.clients__layout{
+	padding-top: 0;
+
+	.contact__item{
+		padding-right: 40px;
+	}
+}
+
+.client-form__layout{
+	.deal__form .form{
+		padding: 24px;
+		width: calc(24px * 2 + 320px * 2 + 40px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
