@@ -127,169 +127,121 @@
             Выйти
         </a>
     </aside>
-    <main class="deal__layout ">
-        <a href="#" class="return__btn">
-            <img src="img/icon/arrows-left.svg" alt="">
-            Назад к сделкам
-        </a>
-        <div class="deal__form">
-            <div class="item__header">
-                <h2 class="item__header__title">Новая сделка</h2>
-            </div>
-            <form action="" method="" class="flex form">
-                <fieldset>
-                    <div class="input__wrapp gap--bottom">
-                        <input type="text" id="dealName">
-                        <label for="dealName">Название</label>
-                    </div>
-                    <!-- Что бы открфть дропдаун нужно доабвить классу dropdown класс open -->
-                    <div class="dropdown input__wrapp gap--bottom">
-                        <div class="dropdown__toogle ">
-                            <input type="text" id="dealSection" value="Новые сделки" class="filled">
-                            <label for="dealSection">Раздел</label>
-                            <img src="img/icon/arr_bottom.png" class="dropdown__arr" alt="">
-                        </div>
-                        <ul class="dropdown__list">
-                            <li>Новые сделки</li>
-                            <li>Новые сделки</li>
-                            <li>Новые сделки</li>
-                        </ul>
-                    </div>
-                    <div class="input__wrapp gap--bottom">
-                        <input type="text" id="deasDeadline" value="20 Дек 2020" class="filled">
-                        <label for="deasDeadline">Выполнить до</label>
-                    </div>
-                    <!-- Что бы открфть дропдаун нужно доабвить классу dropdown класс open -->
-                    <div class="dropdown input__wrapp gap--bottom ">
-                        <div class="dropdown__toogle dropdown__additional">
-                            <img src="img/icon/ava-empty.svg" alt="" class="executor__img">
-                            <input type="text" id="dealExecutor" value="Лариса Иванченко" class="filled" readonly="">
-                            <label for="dealExecutor">Исполнитель</label>
-                            <img src="img/icon/arr_bottom.png" class="dropdown__arr" alt="">
-                        </div>
-                        <ul class="dropdown__list">
-                            <li>
-                                <img src="img/icon/ava-empty.svg" alt="" class="executor__img">
-                                Василий Степанюк
-                            </li>
-                            <li>
-                                <img src="img/icon/ava-empty.svg" alt="" class="executor__img">
-                                Елизавета Максимова
-                            </li>
-                            <li>
-                                <img src="img/icon/ava-empty.svg" alt="" class="executor__img">
-                                Василиса Еремчук
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="input__wrapp gap--bottom">
-                        <input type="cost" id="dealCost">
-                        <label for="dealCost">Цена сделки</label>
-                    </div>
-                    <!-- Что бы открфть дропдаун нужно доабвить классу dropdown класс open -->
-                    <div class="dropdown input__wrapp gap--bottom ">
-                        <div class="dropdown__toogle dropdown__additional">
-                            <div class="priority__circle red"></div>
-                            <input type="text" id="dealPriority" value="Высокий" class="filled" readonly="">
-                            <label for="dealPriority">Приоритет</label>
-                            <img src="img/icon/arr_bottom.png" class="dropdown__arr" alt="">
-                        </div>
-                        <ul class="dropdown__list">
-                            <li>
-                                <div class="priority__circle green"></div>
-                                Высокий
-                            </li>
-                            <li>
-                                <div class="priority__circle yellow"></div>
-                                Низкий
-                            </li>
-                            <li>
-                                <div class="priority__circle red"></div>
-                                Срочный
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="input__wrapp gap--bottom ">
-                        <textarea type="text" id="dealComment" class="filled">Предложение из нового каталога, перелет + паромная переправа. С программой для двоих</textarea>
-                        <label for="dealComment">Компания</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="flex justify ">
-                        <!-- Что бы открфть дропдаун нужно доабвить классу dropdown класс open -->
-                        <div class="dropdown input__wrapp gap--bottom w-320">
-                            <div class="dropdown__toogle ">
-                                <input type="text" id="dealClient" value="Новые сделки" class="filled">
-                                <label for="dealClient">Клиент</label>
-                                <img src="img/icon/arr_bottom.png" class="dropdown__arr" alt="">
-                            </div>
-                            <ul class="dropdown__list">
-                                <li>Новые сделки</li>
-                                <li>Новые сделки</li>
-                                <li>Новые сделки</li>
-                            </ul>
-                        </div>
-                        <div class="input__wrapp gap--bottom w-320">
-                            <input type="text" id="dealCompany" value="Завод Авиант" class="filled">
-                            <label for="dealCompany">Компания</label>
-                        </div>
-                    </div>
-                    <div class="flex justify">
-                        <div class="input__wrapp gap--bottom w-320">
-                            <input type="tel" id="dealTel" value="+38 067 600 00 00" class="filled">
-                            <label for="dealTel">Телефон</label>
-                        </div>
-                        <div class="input__wrapp gap--bottom w-320">
-                            <input type="email" id="dealMail" value="oleg.vasilenko@gmail.com" class="filled">
-                            <label for="dealMail">Почта</label>
-                        </div>
-                    </div>
-                    <div class="input__wrapp gap--bottom ">
-                        <textarea type="text" id="dealClientComment" class="filled">Телефон привязан к телеграм, удобней всего общаться там. Строго до 18:00!! Клиент нервный )))</textarea>
-                        <label for="dealClientComment">Компания</label>
-                    </div>
-                    <div class="files__wrapp">
-                    	<div class="doc flex">
-                    		<a href="#" download="">
-	                    		<img src="img/icon/icons-docs.svg" alt="">
-	                    		коммерчечкое предложение 16го октября.pdf
-	                    		img
-	                    	</a>
-	                    	<img class="remove__icon" src="img/icon/icons-delete.svg" alt="">
-                    	</div>
-                    	<div class="doc flex">
-                    		<a href="#" download="">
-	                    		<img src="img/icon/icons-docs.svg" alt="">
-	                    		обзор тура.doc
-	                    	</a>
-	                    	<img class="remove__icon" src="img/icon/icons-delete.svg" alt="">
-                    	</div>
-                    	<div class="doc flex">
-                    		<a href="#" download="">
-	                    		<img src="img/icon/icons-docs.svg" alt="">
-	                    		коммерчечкое предложение 16го октября.pdf
-	                    		img
-	                    	</a>
-	                    	<img class="remove__icon" src="img/icon/icons-delete.svg" alt="">
-                    	</div>
-                    	
-                    </div>
-                    <div class="file__input flex">
-                        <input type="file">
-                        <div>
-                            <img src="img/icon/plus-big.svg" alt="">
-                            <p>Нажмите ‘+’ или перетащите чтобы загрузить фотографию</p>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="btn__section flex">
-                    <div class="outline__btn w-170">Отменить</div>
-                    <input type="submit" class="gap--left w-170" value="Сохранить">
-                </div>
-            </form>
-        </div>
+    <main class="dasboard__layout flex">
+    	<div class="statistics statistics__block">
+    		<div class="grid__small">
+    			<img src="img/icon/icons-tasks.svg" class="statistics__icon" alt="">
+    			<h2 class="statistics__title">Сделок </h2>
+    			<p class="statistics__count">31</p>
+    		</div>
+    		<div class="grid__small">
+    			<img src="img/icon/icons-contacts.svg" class="statistics__icon" alt="">
+    			<h2 class="statistics__title">Сотрудников </h2>
+    			<p class="statistics__count">45</p>
+    		</div>
+    		<div class="grid__small">
+    			<img src="img/icon/icons-clients.svg" class="statistics__icon" alt="">
+    			<h2 class="statistics__title">Клиентов </h2>
+    			<p class="statistics__count">180</p>
+    		</div>
+    		<div class="grid__big flex">
+    			<div class="statistics__legend clients">
+    				<p class="statistics__legend__number">75 %</p>
+    				<p class="statistics__legend__items">Клиентов</p>
+    			</div>
+    			<div class="statistics__chart"></div>
+    			<div class="statistics__legend empl">
+    				<p class="statistics__legend__number">25 %</p>
+    				<p class="statistics__legend__items">Сотрудников</p>
+    			</div>
+    		</div>
+    	</div>
+
+			<div class="tasks__column done">
+				<div class="column__header flex">
+					<h2>Мои сделки <span class="count">3</span></h2>
+					
+				</div>
+
+				<div class="task task__block green">
+					<h2 class="task__title">Египет VIP горящий</h2>
+					<p class="task__deadline">Закрыть до: <span>23 Дек 2020</span></p>
+					<div class="task__executor flex">
+						<img src="img/icon/ava-empty.svg" class="executor__img" alt="">
+						<p class="executor__name">Василиса Еремчук</p>
+					</div>
+					<img src="img/icon/icons-delete.svg" class="remove__icon" alt="">
+
+					<p class="price">$200</p>
+				</div>
+				<div class="task task__block yellow">
+					<h2 class="task__title">Египет VIP горящий</h2>
+					<p class="task__deadline">Закрыть до: <span>23 Дек 2020</span></p>
+					<div class="task__executor flex">
+						<img src="img/icon/ava-empty.svg" class="executor__img" alt="">
+						<p class="executor__name">Василиса Еремчук</p>
+					</div>
+					<img src="img/icon/icons-delete.svg" class="remove__icon" alt="">
+
+					<p class="price">$200</p>
+				</div>
+				<div class="task task__block red">
+					<h2 class="task__title">Египет VIP горящий</h2>
+					<p class="task__deadline">Закрыть до: <span>23 Дек 2020</span></p>
+					<div class="task__executor flex">
+						<img src="img/icon/ava-empty.svg" class="executor__img" alt="">
+						<p class="executor__name">Василиса Еремчук</p>
+					</div>
+					<img src="img/icon/icons-delete.svg" class="remove__icon" alt="">
+
+					<p class="price">$200</p>
+				</div>
+				
+
+			</div>
     </main>
-    
+    <div class="popup__edit__name w-400 popup ">
+        <img src="img/icon/icons-close.svg" class="close__icon" alt="">
+        <form action="" method="" class="form">
+            <h2 class="popup__title">Редактировать название</h2>
+            <div class="input__wrapp">
+                <input type="text" id="sectionName" class="filled" value="Заморожено">
+                <label for="sectionName">Название</label>
+            </div>
+            <div class="btn__section flex">
+                <div class="outline__btn">Отменить</div>
+                <input type="submit" class="" value="Сохранить">
+            </div>
+        </form>
+    </div>
+    <div class="popup__add__section w-400 popup ">
+        <img src="img/icon/icons-close.svg" class="close__icon" alt="">
+        <form action="" method="" class="form">
+            <h2 class="popup__title">Добавить новый раздел</h2>
+            <div class="input__wrapp">
+                <input type="text" id="addSection">
+                <label for="addSection">Название</label>
+            </div>
+            <div class="btn__section flex">
+                <div class="outline__btn">Отменить</div>
+                <input type="submit" class="" value="Сохранить">
+            </div>
+        </form>
+    </div>
+    <div class="popup__remove__section w-400 popup ">
+        <img src="img/icon/icons-close.svg" class="close__icon" alt="">
+        <form action="" method="" class="form">
+            <h2 class="popup__title">Добавить новый раздел</h2>
+            <p class="warning__text">Удалить раздел и все сделки в нём?<br>
+                Внимание! Это действие необратимо</p>
+            <div class="btn__section flex">
+                <div class="outline__btn">Отменить</div>
+                <input type="submit" class="" value="Сохранить">
+            </div>
+        </form>
+    </div>
+    <div class="popup__back ">
+    </div>
 </body>
 
 </html>
