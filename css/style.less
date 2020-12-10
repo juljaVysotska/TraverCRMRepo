@@ -72,11 +72,11 @@ a {
 }
 
 .form__login {
-    padding-right: 120px;
+    margin-right: auto;
     margin-left: auto;
     max-height: 750px;
     overflow-y: auto;
-    width: calc(320px + 120px);
+    width: calc(320px);
     padding-top: 40px;
 
     @media all and (max-height: 600px) {
@@ -2140,6 +2140,8 @@ a {
 
     .checkbox__custom {
         margin-right: 27px;
+        top: unset;
+        transform: unset;
 
         .checkmark {
             margin-right: 0;
@@ -2265,8 +2267,7 @@ a {
     .contact__item__status,
     .contact__preview__name,
     .contact__item__company,
-    .contact__item__tour-count,
-        {
+    .contact__item__tour-count {
         .font-600;
         font-size: 13px;
         line-height: normal;

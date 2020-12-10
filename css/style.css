@@ -67,11 +67,11 @@
 	 color: #334d6e;
 }
  .form__login {
-	 padding-right: 120px;
+	 margin-right: auto;
 	 margin-left: auto;
 	 max-height: 750px;
 	 overflow-y: auto;
-	 width: calc(320px + 120px);
+	 width: calc(320px);
 	 padding-top: 40px;
 }
  @media all and (max-height: 600px) {
@@ -1720,6 +1720,8 @@
 }
  .contact__item .checkbox__custom {
 	 margin-right: 27px;
+	 top: unset;
+	 transform: unset;
 }
  .contact__item .checkbox__custom .checkmark {
 	 margin-right: 0;
